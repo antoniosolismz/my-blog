@@ -1,0 +1,14 @@
+// Custom SCSS - ctOS Theme Override
+// This file imports the ctOS theme and effects
+
+// Import ctOS theme (color palette and base styles)
+@import "ctos-theme";
+
+// Import ctOS effects (visual effects)
+@import "ctos-effects";
+
+// Apply ctOS theme class to body
+body.ctos-theme {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}

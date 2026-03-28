@@ -1,0 +1,107 @@
+// ctOS Theme - Watch Dogs Inspired
+// Color palette and base styles for ctOS aesthetic
+
+// ctOS Color Palette
+$ctos-black: #0a0a0a;
+$ctos-dark: #111111;
+$ctos-dark-gray: #1a1a1a;
+$ctos-gray: #2d2d2d;
+$ctos-light-gray: #3d3d3d;
+
+// ctOS Accent Colors
+$ctos-green: #00ff41;
+$ctos-green-dim: #00cc33;
+$ctos-green-glow: rgba(0, 255, 65, 0.4);
+$ctos-cyan: #00ffff;
+$ctos-cyan-dim: #00cccc;
+$ctos-cyan-glow: rgba(0, 255, 255, 0.4);
+$ctos-orange: #ff6600;
+$ctos-red: #ff3333;
+
+// Text Colors
+$ctos-text-primary: #e0e0e0;
+$ctos-text-secondary: #a0a0a0;
+$ctos-text-muted: #666666;
+
+// Override Dark Mode Colors for ctOS Theme
+:root {
+  // Dark mode ctOS colors
+  --ctos-bg: #{$ctos-black};
+  --ctos-text: #{$ctos-text-primary};
+  --ctos-accent: #{$ctos-green};
+  --ctos-accent-cyan: #{$ctos-cyan};
+}
+
+// Dark mode overrides (applied when dark mode is active)
+body {
+  background-color: $ctos-black;
+  color: $ctos-text-primary;
+}
+
+// Override theme dark colors
+$dark-black: #0a0a0a;
+$dark-white: #e0e0e0;
+$dark-light: #111111;
+$dark-smoke: #2d2d2d;
+$dark-gray: #3d3d3d;
+$dark-text-base-color: #e0e0e0;
+$dark-text-link-blue: #00ff41;
+$dark-text-link-blue-active: #00cc33;
+$dark-bloquote-border: #00ff41;
+$dark-blockquote-text: #a0a0a0;
+$dark-inline-code-text: #00ff41;
+$dark-inline-code-bg: #1a1a1a;
+$dark-toc-bg: #111111;
+$dark-go-top-bg: rgba(0, 255, 65, 0.2);
+$dark-go-top-bg-hover: rgba(0, 255, 65, 0.4);
+
+// ctOS Typography
+$ctos-mono-family: 'Consolas', 'Monaco', 'Source Code Pro', monospace;
+$ctos-sans-family: 'Roboto', 'Segoe UI', sans-serif;
+
+// Base ctOS styles
+.ctos-terminal {
+  font-family: $ctos-mono-family;
+  background-color: $ctos-black;
+  color: $ctos-green;
+}
+
+.ctos-text {
+  color: $ctos-text-primary;
+}
+
+.ctos-accent {
+  color: $ctos-green;
+}
+
+.ctos-accent-cyan {
+  color: $ctos-cyan;
+}
+
+// Links in ctOS style
+a {
+  color: $ctos-cyan;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $ctos-green;
+    text-shadow: 0 0 8px $ctos-green-glow;
+  }
+}
+
+// Code blocks in ctOS style
+pre, code {
+  font-family: $ctos-mono-family;
+  background-color: $ctos-dark-gray !important;
+  color: $ctos-green !important;
+  border: 1px solid $ctos-gray;
+}
+
+// Blockquotes in ctOS style
+blockquote {
+  border-left: 3px solid $ctos-green;
+  background-color: $ctos-dark-gray;
+  color: $ctos-text-secondary;
+  font-family: $ctos-mono-family;
+}

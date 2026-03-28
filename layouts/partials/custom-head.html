@@ -1,0 +1,5 @@
+{{- $ctosCSS := resources.Get "css/ctos.css" | minify | fingerprint -}}
+<link href="{{ $ctosCSS.RelPermalink }}" rel="stylesheet">
+
+{{- $ctosJS := resources.Get "js/ctos.js" | minify | fingerprint -}}
+<script defer src="{{ $ctosJS.RelPermalink }}" integrity="{{ $ctosJS.Data.Integrity }}"></script>
