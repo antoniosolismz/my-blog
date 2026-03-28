@@ -1,6 +1,6 @@
 <!-- Context: project-intelligence/project | Priority: critical | Version: 1.0 | Updated: 2026-03-01 -->
 
-# Project: Antonio's Technology Blog
+# Project: Daedalus Complex
 
 > Personal Hugo-based blog for technology articles.
 

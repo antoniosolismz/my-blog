@@ -1,4 +1,4 @@
-title = "Antonio's Technology"
+title = "Daedalus Complex"
 baseURL = 'https://blog.antoniosolismz.com/'
 
 # This is what goes in <html lang="">
@@ -60,9 +60,9 @@ disqusShortname = ''
 [params.author]
   avatar = "avatar.png" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Antonio's technology"
+  intro = "Daedalus Complex"
   name = "Antonio Solis"
-  description = "Antonio's blog to discuss technology and tinker with fun stuff"
+  description = "A blog to discuss technology and tinker with fun stuff"
 
 # Allow to override webmanifest options
 [params.webmanifest]
@@ -79,7 +79,7 @@ disqusShortname = ''
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/otelo2"
+url = "https://github.com/antoniosolismz"
 
 [[params.socialIcons]]
 name = "linkedin"
